@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website Using HTML & CSS | Codehal</title>
+    <title>Hamza sghaier</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,15 +13,21 @@
 <body>
 
     <nav class="navbar">
-        <!-- <a href="#" class="logo">Portfolio.</a> -->
-        <ul>
+        <div class="logo">
+            <span class="logo-text">Turning Ideas into <span class="highlight-blue">Apps</span> & <span class="highlight-gradient">Making Mobile Cooler</span><span class="rocket">🚀</span></span>
+        </div>
+        
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <ul class="nav-menu">
             <li class="active"><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
-
-            <!-- <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li> -->
+   
         </ul>
     </nav>
 
@@ -51,12 +57,27 @@
                 projects, ensuring the delivery of top-
                 quality, user-focused solutions.</p>
             <div class="btn-sci">
-                <a href="#" class="btn">Download CV</a>
+                <a href="HamzaSghaierMobileDevResumeEn.pdf" class="btn" download>Download CV</a>
+
                 <div class="sci">
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://github.com/hamzaSghaier"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/hamza-sghaier-523000156/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class='bx bxs-map'></i>
+                    <span>Tunisia</span>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bxs-envelope'></i>
+                    <span>sghhamza10@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bxs-phone'></i>
+                    <span>+21650145577</span>
                 </div>
             </div>
         </div>
@@ -69,12 +90,85 @@
             </div>
         </div>
     </section>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-header">
+            <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <img src="skills/Flutter.svg" alt="Flutter">
+                </div>
+                <span class="skill-name">Flutter</span>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <img src="skills/Dart.svg" alt="Dart">
+                </div>
+                <span class="skill-name">Dart</span>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <img src="skills/AndroidStudio.svg" alt="Android Studio">
+                </div>
+                <span class="skill-name">Android Studio</span>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <img src="skills/Xcode.svg" alt="Xcode">
+                </div>
+                <span class="skill-name">Xcode</span>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <img src="skills/Firebase.svg" alt="Firebase">
+                </div>
+                <span class="skill-name">Firebase</span>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <img src="skills/Node.png" alt="Node">
+                </div>
+                <span class="skill-name">Node JS</span>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <img src="skills/Git.png" alt="Git">
+                </div>
+                <span class="skill-name">Git</span>
+            </div>
+
+
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <img src="skills/Postman.svg" alt="Postman">
+                </div>
+                <span class="skill-name">Postman</span>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <img src="skills/Figma.svg" alt="Figma">
+                </div>
+                <span class="skill-name">Figma</span>
+            </div>
+        </div>
+    </section>
     <!-- Experience Section -->
     <section class="experience" id="experience">
         <div class="experience-header">
             <h2 class="section-title">Experience</h2>
         </div>
-    
+
         <div class="experience-container">
             <div class="job">
                 <div class="job-header">
@@ -84,31 +178,37 @@
                         <span class="duration">September 2022 - Present</span>
                     </div>
                 </div>
-                
+
                 <div class="job-description">
                     <ul>
-                        <li>Developed multiple mobile applications from scratch using Flutter, covering all stages of development from planning and design to deployment and maintenance.</li>
+                        <li>Developed multiple mobile applications from scratch using Flutter, covering all stages of
+                            development from planning and design to deployment and maintenance.</li>
                         <li>Deployed and maintained applications on both the Apple App Store and Google Play Store.</li>
                         <li>Collaborated with cross-functional teams to define, design, and ship new features.</li>
-                        <li>Ensured the performance, quality, and responsiveness of applications by identifying and correcting bottlenecks and fixing bugs.</li>
-                        <li>Worked closely with clients to gather and refine specifications and requirements based on technical needs.</li>
+                        <li>Ensured the performance, quality, and responsiveness of applications by identifying and
+                            correcting bottlenecks and fixing bugs.</li>
+                        <li>Worked closely with clients to gather and refine specifications and requirements based on
+                            technical needs.</li>
                     </ul>
                 </div>
-    
+
                 <div class="projects">
                     <h4>Projects</h4>
-                    
+
                     <div class="project-card">
                         <div class="project-info">
                             <h5>Tendeal</h5>
-                            <p>The go-to online shopping app for everyone in Qatar, offering a large range of products and categories from various companies.</p>
-                            
+                            <p>The go-to online shopping app for everyone in Qatar, offering a large range of products
+                                and categories from various companies.</p>
+
                             <div class="project-links">
                                 <a href="https://tendeal.qa/" class="btn project-btn" target="_blank">Website</a>
-                                <a href="https://apps.apple.com/us/app/tendeal/id1665985385" class="btn project-btn" target="_blank">App Store</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.tendeal.app&hl=en" class="btn project-btn" target="_blank">Play Store</a>
+                                <a href="https://apps.apple.com/us/app/tendeal/id1665985385" class="btn project-btn"
+                                    target="_blank">App Store</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.tendeal.app&hl=en"
+                                    class="btn project-btn" target="_blank">Play Store</a>
                             </div>
-                            
+
                             <div class="technologies">
                                 <h6>Technologies Used:</h6>
                                 <ul class="tech-list">
@@ -121,7 +221,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <div class="project-gallery">
                             <div class="gallery-container">
                                 <img src="tendeal/1.webp" alt="Tendeal App Screenshot 1" class="gallery-img">
@@ -133,16 +233,17 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="project-card">
                         <div class="project-info">
                             <h5>Tendeal Seller</h5>
                             <p>Application intended for use by merchants who subscribed with Tendeal.</p>
-                            
+
                             <div class="project-links">
-                                <a href="https://apps.apple.com/us/app/tendeal-seller/id1670297420" class="btn project-btn" target="_blank">App Store</a>
+                                <a href="https://apps.apple.com/us/app/tendeal-seller/id1670297420"
+                                    class="btn project-btn" target="_blank">App Store</a>
                             </div>
-                            
+
                             <div class="technologies">
                                 <h6>Technologies Used:</h6>
                                 <ul class="tech-list">
@@ -154,12 +255,15 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <div class="project-gallery">
                             <div class="gallery-container">
-                                <img src="tendeal-seller/1.webp" alt="Tendeal Seller App Screenshot 1" class="gallery-img">
-                                <img src="tendeal-seller/2.webp" alt="Tendeal Seller App Screenshot 2" class="gallery-img">
-                                <img src="tendeal-seller/3.webp" alt="Tendeal Seller App Screenshot 3" class="gallery-img">
+                                <img src="tendeal-seller/1.webp" alt="Tendeal Seller App Screenshot 1"
+                                    class="gallery-img">
+                                <img src="tendeal-seller/2.webp" alt="Tendeal Seller App Screenshot 2"
+                                    class="gallery-img">
+                                <img src="tendeal-seller/3.webp" alt="Tendeal Seller App Screenshot 3"
+                                    class="gallery-img">
                             </div>
                         </div>
                     </div>
@@ -167,14 +271,18 @@
                     <div class="project-card">
                         <div class="project-info">
                             <h5>3F GYM</h5>
-                            <p>An app that allows users to purchase memberships, book Calisthenics or CrossFit classes, and check information on different classes.</p>
-                            
+                            <p>An app that allows users to purchase memberships, book Calisthenics or CrossFit classes,
+                                and check information on different classes.</p>
+
                             <div class="project-links">
-                                <a href="https://fullforcefitness.qa/" class="btn project-btn" target="_blank">Website</a>
-                                <a href="https://apps.apple.com/ua/app/3f-gym/id6480144381" class="btn project-btn" target="_blank">App Store</a>
-                                <a href="https://play.google.com/store/apps/details?id=com.force.fitness&hl=en&gl=US" class="btn project-btn" target="_blank">Play Store</a>
+                                <a href="https://fullforcefitness.qa/" class="btn project-btn"
+                                    target="_blank">Website</a>
+                                <a href="https://apps.apple.com/ua/app/3f-gym/id6480144381" class="btn project-btn"
+                                    target="_blank">App Store</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.force.fitness&hl=en&gl=US"
+                                    class="btn project-btn" target="_blank">Play Store</a>
                             </div>
-                            
+
                             <div class="technologies">
                                 <h6>Technologies Used:</h6>
                                 <ul class="tech-list">
@@ -190,7 +298,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <div class="project-gallery">
                             <div class="gallery-container">
                                 <img src="3FGym/1.webp" alt="3F GYM App Screenshot 1" class="gallery-img">

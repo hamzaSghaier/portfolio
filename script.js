@@ -1,20 +1,9 @@
-// JavaScript for Responsive Navigation and Scroll Effects
-
+// JavaScript for Navbar Functionality
 document.addEventListener('DOMContentLoaded', () => {
     // Variables
     const navbar = document.querySelector('.navbar');
-    const menuToggle = document.createElement('div');
-    menuToggle.className = 'menu-toggle';
-    const navMenu = document.querySelector('.navbar ul');
-    
-    // Create hamburger menu icon
-    for (let i = 0; i < 3; i++) {
-        const span = document.createElement('span');
-        menuToggle.appendChild(span);
-    }
-    
-    // Add menu toggle to navbar
-    navbar.appendChild(menuToggle);
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
     
     // Last scroll position for determining scroll direction
     let lastScrollTop = 0;
@@ -40,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Close mobile menu when clicking menu items
-    document.querySelectorAll('.navbar ul li a').forEach(item => {
+    document.querySelectorAll('.nav-menu li a').forEach(item => {
         item.addEventListener('click', () => {
             navMenu.classList.remove('active');
             menuToggle.classList.remove('active');
