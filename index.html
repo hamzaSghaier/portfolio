@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website Using HTML & CSS | Codehal</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio.</a>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <section class="home">
+        <div class="home-info">
+            <h1>Hamza sghaier</h1>
+            <h2>I'm a
+                <span style="--i:4;" data-text="Software engineer">Software engineer</span>
+                <span style="--i:3;" data-text="Mobile app developer">Mobile app developer</span>
+                <span style="--i:2;" data-text="Android & IOS developer">Android & IOS developer</span>
+                <span style="--i:1;" data-text="Flutter Senior developer"> Flutter Senior developer</span>
+            </h2>
+            <p>Accomplished software developer with a strong background in web and mobile application development, .
+                Proficient in multiple programming
+                languages and frameworks, I have a proven track record of delivering high-caliber solutions. My
+                adeptness in project management, agile
+                methodologies, and effective multilingual communication enables me to excel in software development
+                projects, ensuring the delivery of top-
+                quality, user-focused solutions.</p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="home.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-header">
+            <h2 class="section-title">Experience</h2>
+        </div>
+    
+        <div class="experience-container">
+            <div class="job">
+                <div class="job-header">
+                    <h3>Mobile Developer</h3>
+                    <div class="job-info">
+                        <span class="company">Linkia IT & Marketing</span>
+                        <span class="duration">September 2022 - Present</span>
+                    </div>
+                </div>
+                
+                <div class="job-description">
+                    <ul>
+                        <li>Developed multiple mobile applications from scratch using Flutter, covering all stages of development from planning and design to deployment and maintenance.</li>
+                        <li>Deployed and maintained applications on both the Apple App Store and Google Play Store.</li>
+                        <li>Collaborated with cross-functional teams to define, design, and ship new features.</li>
+                        <li>Ensured the performance, quality, and responsiveness of applications by identifying and correcting bottlenecks and fixing bugs.</li>
+                        <li>Worked closely with clients to gather and refine specifications and requirements based on technical needs.</li>
+                    </ul>
+                </div>
+    
+                <div class="projects">
+                    <h4>Projects</h4>
+                    
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h5>Tendeal</h5>
+                            <p>The go-to online shopping app for everyone in Qatar, offering a large range of products and categories from various companies.</p>
+                            
+                            <div class="project-links">
+                                <a href="https://tendeal.qa/" class="btn project-btn" target="_blank">Website</a>
+                                <a href="https://apps.apple.com/us/app/tendeal/id1665985385" class="btn project-btn" target="_blank">App Store</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.tendeal.app&hl=en" class="btn project-btn" target="_blank">Play Store</a>
+                            </div>
+                            
+                            <div class="technologies">
+                                <h6>Technologies Used:</h6>
+                                <ul class="tech-list">
+                                    <li><span class="tech-item">Flutter</span></li>
+                                    <li><span class="tech-item">GetX (State Management)</span></li>
+                                    <li><span class="tech-item">Firebase</span></li>
+                                    <li><span class="tech-item">Laravel (Backend)</span></li>
+                                    <li><span class="tech-item">REST API</span></li>
+                                    <li><span class="tech-item">Dibsy (Payment Method)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-gallery">
+                            <div class="gallery-container">
+                                <img src="tendeal/1.webp" alt="Tendeal App Screenshot 1" class="gallery-img">
+                                <img src="tendeal/2.webp" alt="Tendeal App Screenshot 2" class="gallery-img">
+                                <img src="tendeal/3.webp" alt="Tendeal App Screenshot 3" class="gallery-img">
+                                <img src="tendeal/4.webp" alt="Tendeal App Screenshot 4" class="gallery-img">
+                                <img src="tendeal/5.webp" alt="Tendeal App Screenshot 5" class="gallery-img">
+                                <img src="tendeal/6.webp" alt="Tendeal App Screenshot 66" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h5>Tendeal Seller</h5>
+                            <p>Application intended for use by merchants who subscribed with Tendeal.</p>
+                            
+                            <div class="project-links">
+                                <a href="https://apps.apple.com/us/app/tendeal-seller/id1670297420" class="btn project-btn" target="_blank">App Store</a>
+                            </div>
+                            
+                            <div class="technologies">
+                                <h6>Technologies Used:</h6>
+                                <ul class="tech-list">
+                                    <li><span class="tech-item">Flutter</span></li>
+                                    <li><span class="tech-item">GetX (State Management)</span></li>
+                                    <li><span class="tech-item">Firebase</span></li>
+                                    <li><span class="tech-item">Laravel (Backend)</span></li>
+                                    <li><span class="tech-item">REST API</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-gallery">
+                            <div class="gallery-container">
+                                <img src="tendeal-seller/1.webp" alt="Tendeal Seller App Screenshot 1" class="gallery-img">
+                                <img src="tendeal-seller/2.webp" alt="Tendeal Seller App Screenshot 2" class="gallery-img">
+                                <img src="tendeal-seller/3.webp" alt="Tendeal Seller App Screenshot 3" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h5>3F GYM</h5>
+                            <p>An app that allows users to purchase memberships, book Calisthenics or CrossFit classes, and check information on different classes.</p>
+                            
+                            <div class="project-links">
+                                <a href="https://fullforcefitness.qa/" class="btn project-btn" target="_blank">Website</a>
+                                <a href="https://apps.apple.com/ua/app/3f-gym/id6480144381" class="btn project-btn" target="_blank">App Store</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.force.fitness&hl=en&gl=US" class="btn project-btn" target="_blank">Play Store</a>
+                            </div>
+                            
+                            <div class="technologies">
+                                <h6>Technologies Used:</h6>
+                                <ul class="tech-list">
+                                    <li><span class="tech-item">Flutter</span></li>
+                                    <li><span class="tech-item">Bloc (State Management)</span></li>
+                                    <li><span class="tech-item">Clean Architecture</span></li>
+                                    <li><span class="tech-item">Dependency Injection</span></li>
+                                    <li><span class="tech-item">Firebase</span></li>
+                                    <li><span class="tech-item">Odoo Backend</span></li>
+                                    <li><span class="tech-item">REST API</span></li>
+                                    <li><span class="tech-item">Dibsy (Payment Method)</span></li>
+                                    <li><span class="tech-item">Katalon (Automated Testing)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-gallery">
+                            <div class="gallery-container">
+                                <img src="3FGym/1.webp" alt="3F GYM App Screenshot 1" class="gallery-img">
+                                <img src="3FGym/2.webp" alt="3F GYM App Screenshot 2" class="gallery-img">
+                                <img src="3FGym/3.webp" alt="3F GYM App Screenshot 3" class="gallery-img">
+                                <img src="3FGym/4.webp" alt="3F GYM App Screenshot 4" class="gallery-img">
+                                <img src="3FGym/5.png" alt="3F GYM App Screenshot 5" class="gallery-img">
+                                <img src="3FGym/6.png" alt="3F GYM App Screenshot 6" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
