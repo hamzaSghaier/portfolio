@@ -44,3 +44,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    // Replace this with your actual form submission logic
+    // For example, you could use EmailJS, FormSubmit, or your own backend API
+    
+    // Example: send an email using mailto (basic approach)
+    const mailtoLink = `mailto:sghhamza10@gmail.com?subject=${encodeURIComponent(subject || 'Contact from Portfolio')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    window.location.href = mailtoLink;
+    
+    // Reset form after submission
+    this.reset();
+    
+    // You could also show a success message
+    alert('Thank you for your message! I will get back to you soon.');
+});
