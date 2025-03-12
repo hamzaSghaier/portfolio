@@ -982,3 +982,212 @@ a {
         flex-wrap: wrap;
     }
 }
+.achievements {
+    padding: 60px 9%;
+    background: #252a34;
+    color: #fff;
+    position: relative;
+}
+
+.achievements-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.certificates-carousel {
+    display: flex;
+    overflow-x: auto;  /* Change from hidden to auto to ensure scrollability */
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 20px;  /* Reduced gap to fit more items */
+    padding: 20px 0;
+    /* Add scroll styling */
+    scrollbar-width: thin;
+    scrollbar-color: #7cf03d #2d333f;
+}
+.certificates-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.certificates-carousel::-webkit-scrollbar-track {
+    background: #2d333f;
+    border-radius: 4px;
+}
+
+.certificates-carousel::-webkit-scrollbar-thumb {
+    background-color: #7cf03d;
+    border-radius: 4px;
+}
+
+.certificate-item {
+    flex: 0 0 280px;  /* Adjusted width to better fit landscape view */
+    height: 210px;    /* Fixed height for consistency */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: #2d333f;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.certificate-item:hover {
+    transform: translateY(-10px);
+}
+
+.certificate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Changed from cover to contain */
+    background-color: #1f242d;  /* Dark background for images with transparency */
+    padding: 8px;  /* Add some padding around the image */
+}
+
+.certificate-caption {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-control {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2d333f;
+    border: 2px solid #7cf03d;
+    color: #7cf03d;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.carousel-control:hover {
+    background: #7cf03d;
+    color: #252a34;
+}
+
+/* Lightbox styles */
+.certificate-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    background-color: #1f242d;  /* Dark background for images with transparency */
+    padding: 10px;
+    border: 3px solid #7cf03d;
+    border-radius: 5px;
+}
+
+.lightbox-caption {
+    color: #fff;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    max-width: 70%;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.lightbox-close:hover {
+    color: #7cf03d;
+}
+
+@media (max-width: 991px) {
+    .achievements {
+        padding: 50px 6%;
+    }
+    
+    .certificate-item {
+        flex: 0 0 260px;
+        height: 195px;
+    }
+    
+    .certificate-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievements-intro {
+        font-size: 16px;
+    }
+    
+    .certificate-item {
+        flex: 0 0 240px;
+        height: 180px;
+    }
+    .certificate-img {
+        height: 180px;
+    }
+    
+    .certificate-caption {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .achievements {
+        padding: 40px 4%;
+    }
+    
+    .certificate-item {
+        flex: 0 0 200px;
+        height: 150px;
+    }
+    .certificates-carousel {
+        gap: 15px;
+    }
+    
+    .certificate-img {
+        height: 160px;
+    }
+    
+    .carousel-control {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .lightbox-caption {
+        font-size: 16px;
+        padding: 15px;
+    }
+}

@@ -66,3 +66,74 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     // You could also show a success message
     alert('Thank you for your message! I will get back to you soon.');
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Carousel functionality
+    const carousel = document.querySelector('.certificates-carousel');
+    const prevBtn = document.querySelector('.carousel-control.prev');
+    const nextBtn = document.querySelector('.carousel-control.next');
+    const items = document.querySelectorAll('.certificate-item');
+    const itemWidth = items[0].offsetWidth + 20; // Width + gap
+    
+    // Calculate the number of items to scroll based on screen width
+    const getScrollCount = () => {
+        if (window.innerWidth < 768) {
+            return 1; // Scroll one item at a time on mobile
+        }
+        return 3; // Scroll three items at a time on larger screens
+    };
+    
+    prevBtn.addEventListener('click', () => {
+        const scrollAmount = itemWidth * getScrollCount();
+        carousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+    
+    nextBtn.addEventListener('click', () => {
+        const scrollAmount = itemWidth * getScrollCount();
+        carousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+    
+    // Lightbox functionality with enhanced image display
+    const certificateItems = document.querySelectorAll('.certificate-item');
+    const lightbox = document.getElementById('certificate-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    
+    certificateItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const img = item.querySelector('.certificate-img');
+            
+            lightboxImg.src = img.src;
+            lightboxCaption.textContent = img.alt; // Use the alt text as caption
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling while lightbox is open
+        });
+    });
+    
+    lightboxClose.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    });
+    
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
